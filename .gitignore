@@ -109,3 +109,24 @@ dmypy.json
 
 # Cython debug symbols
 cython_debug/ 
+
+# Ignore all .terraform folders at any level
+**/.terraform/
+
+# Ignore all tfstate and backup files recursively
+**/*.tfstate
+**/*.tfstate.backup
+**/*.backup
+
+# Ignore crash logs anywhere
+**/crash.log
+
+# Ignore all tfvars files anywhere
+**/*.tfvars
+**/*.tfvars.json
+
+# Ignore override files
+**/override.tf
+**/override.tf.json
+**/*_override.tf
+**/*_override.tf.json
