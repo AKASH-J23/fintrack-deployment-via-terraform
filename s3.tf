@@ -6,9 +6,9 @@ resource "aws_s3_bucket" "tf_backend" {
   bucket = "jeee-bum-baaa-bucket"
   force_destroy = true
 
-  versioning {
-    enabled = true
-  }
+  # versioning {
+  #   enabled = true
+  # }
 
   lifecycle {
     prevent_destroy = false
